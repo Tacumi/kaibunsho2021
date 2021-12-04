@@ -39,21 +39,21 @@
 <h3 class="code-line" data-line-start=21 data-line-end=22><a id="_21"></a>すき家</h3>
 <p class="has-line-data" data-line-start="23" data-line-end="28">機能としてはPR情報表示、メニュー表示、店舗検索、モバイルオーダーが実装されていた。<br>
 起動直後の画面は以下の画像のとおりとなっており、表示画像の高さの算出方法が縦方向の\frac{1}{3}もしくは表示画像のオリジナルの高さの最大値を選択しているものと思われる。<br>
-<img src="https://ipfs.io/ipfs/QmRR2iBWvWVYmniSJRent4YGdj3ngH5RouSsEHt36Ngvtw?filename=Screenshot_20211204-224101.png" alt="ここに画像"><br>
+<img src="sukiya.png" alt="ここに画像"><br>
 メニュー表示と店舗検索はすき家公式ページを開くWebViewとなっている。実装コストを低くしたい&amp;管理を楽にしたいという思いが感じられる。<br>
 モバイルオーダー機能は会員にのみ提供され、Sukipassが登録されているかどうかで支払い金額を軽くするという動作をしている。Webサイトと比較して個人を識別しやすいというものや、それぞれの端末で別のデータを持てるというアプリの特性を利用しているのがうれしい。</p>
 <h3 class="code-line" data-line-start=29 data-line-end=30><a id="_29"></a>松屋フーズ</h3>
 <p class="has-line-data" data-line-start="31" data-line-end="38">機能としては、グループ企業別にPR情報表示、店舗検索、モバイルオーダー、クーポン表示が実装されていた。<br>
 起動直後の画面は以下のとおりとなっており、画像の表示サイズは固定値で決められているようで今回実験に利用したTitan Pocketではトップ画面の全てが表示されない。<br>
-<img src="https://ipfs.io/ipfs/Qmbic2KK8FKkJ1E2axhHRUAKLZhFQiivAYvUYVFib13d7S?filename=Screenshot_20211204-234743.png" alt="ここに画像"><br>
-<img src="https://ipfs.io/ipfs/QmVXDqCZuQx3h6df9xJmSgUpMdQjjjEdUSKDJFX2evwMoW?filename=Screenshot_20211204-235809.png" alt=""><br>
+<img src="matsuya1.png" alt="ここに画像"><br>
+<img src="matsuya2.png" alt=""><br>
 店舗案内機能はどうも埋め込み式のWebViewで検索ページを表示しているように見える。なんかヘッダーダブってね?<br>
 モバイルオーダーは会員にのみ提供され、QRコードを利用して券売機の入力を楽にするという仕組みとなっている。事前に注文を決められて、入力の手間がなくなるのはうれしいところ。<br>
 また、3会社のうち唯一グループ企業で同一のアプリを利用しているため、後々拡張したいとなったときに対応できそうな展望が見られる。</p>
 <h3 class="code-line" data-line-start=39 data-line-end=40><a id="_39"></a>吉野屋</h3>
 <p class="has-line-data" data-line-start="41" data-line-end="48">機能としてはPR情報表示、メニュー表示、クーポン表示、店舗検索が実装されていた。<br>
 起動直後の画面は以下のとおりとなっており、大きなスライダー画像で今行なっている企画を押し出している。<br>
-<img src="https://ipfs.io/ipfs/QmY1E2KV2GmvdNpNTjbP8u9LFCta17nwSUDtB8RDwu5qCq?filename=Screenshot_20211205-000951.png" alt="ここに画像"><br>
+<img src="yoshinoya.png" alt="ここに画像"><br>
 店舗検索機能はネイティブ実装で動作しており、現在地を中心とした位置からの近い店舗を表示している。<br>
 メニュー機能もネイティブ実装されているように見える。受け取れる情報は値段や原材料、アレルギー情報など。注文することはできない。大事な点なのでもう一度言う。注文することができない。<br>
 クーポンは、利用できるクーポンを一覧できるがアプリと連携していないためクーポンを会計時に店員に見せる、運用でカバー!!!な解決策をとっている。死ね。<br>
